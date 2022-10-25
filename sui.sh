@@ -23,7 +23,7 @@ echo -e '\n\e[42mInstall Rust\e[0m\n' && sleep 1
 sudo curl https://sh.rustup.rs -sSf | sh -s -- -y
 source $HOME/.cargo/env
 
-rm -rf /var/sui/db /var/sui/genesis.blob $HOME/sui
+sudo rm -rf /var/sui/db /var/sui/genesis.blob $HOME/sui
 sudo mkdir -p /var/sui/db
 cd $HOME
 git clone https://github.com/MystenLabs/sui.git
